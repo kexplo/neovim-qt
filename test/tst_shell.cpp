@@ -56,8 +56,7 @@ template<class T> static void ValidateNeovimConnection(T* obj) noexcept
 	const bool signalEmitted{ onAttached.wait() };
 	Q_ASSERT(signalEmitted);
 
-	const int signalCount{ onAttached.count() };
-	Q_ASSERT(signalCount == 1);
+	Q_ASSERT(onAttached.count() == 1);
 
 	Q_ASSERT(obj->isNeovimAttached());
 }
