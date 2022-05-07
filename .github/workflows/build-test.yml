@@ -2,9 +2,7 @@ name: Build And Test
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches: [ v0.2.16.1-nvim_v0.7.0-win64 ]
 
 jobs:
   BuildTest:
